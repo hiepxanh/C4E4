@@ -11,7 +11,7 @@ print("Area = ",3.14*r**2)
 print("Convert Celsius into Fahrenheit")
 c = int(input("Input the temperature in Celsius "))
 f = c*1.8+32
-print(str.format("{0} (C) = {1} (F)",c,f))
+print(c," (C) = ",f," (F)")
 ##4. Calculate the number of bacteria after a period of time
 print("Calculate the number of bacteria after a period of time")
 b1 = int(input("Input the initial number of bacteria "))
