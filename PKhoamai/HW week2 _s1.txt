@@ -1,0 +1,9 @@
+1. To check type of variable a:
+type(a)
+
+If variable is given invalid name, there is a syntax error
+Some example of invalid names including:
+- 2there
+- print
+- PK@
+
