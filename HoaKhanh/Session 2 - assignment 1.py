@@ -24,6 +24,6 @@ b = 1
 for x in range(5):  
         a,b = b,a+b
         print(str.format("Month {0} : {1} pair(s) of rabbits", x, b))
-
+#thu edit phat
     
     
