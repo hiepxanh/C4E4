@@ -6,8 +6,7 @@ print("Hello, my name is Hiep and these are my sheep sizes ", sizes)
 n = int(input("Nhap thang can thu hoach: "))   
 for t in range(1, n+1):
     print("MONTH ", t, ":")
-    for i in range (len(sizes)):
-        sizes[i] = sizes[i] + 50
+    sizes = [50 + size for size in sizes]
     print("One month has passed and here is my flock", sizes)
     if t == n:
         print("Flock has sizes in total: ", sum(sizes))
