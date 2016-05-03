@@ -24,9 +24,21 @@ n=[5,7,300,90,24,50,75]
 print('Hello, my name is Hoang and there are ship sizes \n',n)
 ##2.2
 t=0
+t1=0
 for i in n:
     if(i>t):
         t=i
+        t1=t1+1
     else:
         t=t
 print('Now my biggest sheep has size',t,"let'shear it")
+##2.3
+if(t1!=0):
+    n.remove(t)
+    n.insert(t1-1,8)
+print('After shearing, here is my flock \n',n)
+##2.4
+n_after=[50+a for a in n]
+print('One month has passed, now here is my flock \n',n_after)
+##2.5
+
