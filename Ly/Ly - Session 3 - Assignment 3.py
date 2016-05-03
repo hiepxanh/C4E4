@@ -41,6 +41,7 @@ print(str.format("Hello, my name is Hiep and these are my ship sizes {0}", list)
 
 
 #2.2
+list=["5", "7", "300", "90", "24", "50", "75"]
 print(str.format("Hello, my name is Hiep and these are my ship sizes {0}", list))
 list=[int(i) for i in list]
 m=max(list)
@@ -49,6 +50,7 @@ print(str.format("Now my biggest sheep has size {0} let's shear it", m))
 
 
 #2.3
+list=["5", "7", "300", "90", "24", "50", "75"]
 print(str.format("Hello, my name is Hiep and these are my ship sizes {0}", list))
 list=[int(i) for i in list]
 m=max(list)
@@ -59,7 +61,8 @@ print(str.format("After shearing, here is my flock {0}", list))
 
 
 
-#2.4 
+#2.4
+list=["5", "7", "300", "90", "24", "50", "75"]
 print(str.format("Hello, my name is Hiep and these are my ship sizes {0}", list))
 list=[int(i) for i in list]
 m=max(list)
@@ -77,6 +80,7 @@ print(str.format("One month has passed, now here is my flock {0}", list))
 
    
 #2.5
+list=["5", "7", "300", "90", "24", "50", "75"]
 print(str.format("Hello, my name is Hiep and these are my ship sizes {0}", list))
 for x in range(1,4):
     print(str.format("Month {0} :", x))
@@ -93,6 +97,7 @@ for x in range(1,4):
 
 
 #2.6
+list=["5", "7", "300", "90", "24", "50", "75"]
 print(str.format("Hello, my name is Hiep and here is my flock {0}", list))
 list=[int(i) for i in list]
 m=max(list)
@@ -148,11 +153,18 @@ range4.extend(list4)
 print(str.format("range4 {0}", range4))
 
 
-#4.2
 
+#4.2 & #4.3
+n = input('Input n: ')
+list = []
+list.extend(range(1,int(n)+1))
 
-#4.3
+sequence=[1/x for x in list]
+total_sequence=sum(sequence)
+print(total_sequence)
+
 
 
 #4.4
+
 
