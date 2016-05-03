@@ -49,16 +49,25 @@ print("My flock hasa size in total:", sum(sheep_size),"\n", "Iwould get",sum(she
 ##3
 range1=range(0,7)
 for x in range1:
-    print(x,end", ")
+    print(x,end=", ")
+print("\n")
+    
 range2 = range(1,11,3)
 
 for x in range2:
     print(x,end=", ")
+print("\n")
 range3 = range(5,0,-1)
 for x in range3:
     print(x,end=", ")
-
+print("\n")
 range4 = range(6,-3,-2)
 for x in range4:
     print(x,end=", ")
+
+##4
+n=10
+S=1/n+1/(n+1)
+for n in range (1,10):
+    print(sum(s))
 
