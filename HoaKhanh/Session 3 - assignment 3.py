@@ -23,7 +23,8 @@ for i in range(4):
     print(sizes)
     m = max(sizes)
     print("Now my biggest sheep has size",m, "let's shear it !")
-    sizes.remove(m)
+    m_index = sizes.index(m)
+    sizes[m_index] = 8
     print('After shearing, here is my flock:')
     print(sizes)
 
