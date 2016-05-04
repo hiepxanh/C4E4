@@ -37,6 +37,7 @@ print(N)
 print(" ")
 
 for month in range(1,4):
+    N.sort()
     print("MONTH",month)
     print("One month has passed, now here is my flock:")
     for x in range(7):
