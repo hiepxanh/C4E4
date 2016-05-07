@@ -19,7 +19,7 @@ print(type(c))
 # Exercise 2: Area of the circle
 r = 10 # r : radius
 area = r**2*3.14
-print(" Areas = ", area)
+print(" Area = ", area)
 
 # Exercise 3: Convert Celsius to Fahrenheit
 # Fahrenheit = Celsius *1.8 + 32
