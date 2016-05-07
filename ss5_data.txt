@@ -1,0 +1,4 @@
+Hoa 15 400
+Hoang 10 300
+Phuong 20 100
+Ly 30 50
