@@ -44,3 +44,19 @@ if string_with_no_dollars == "80% percent of life is showing up":
     print("your function is correct")
 else:
     print("Oops, there's a bug")
+##7
+def get_even_list(l):
+    for i in l:
+        a=True
+        if i%2==0:
+            a=1
+        else:
+            l.remove(i)
+    return l
+##8
+l=[1,2,5,-10,9,6]
+even_list = get_even_list(l)
+if set(even_list) == set([2,-10,6]):
+    print("Your fuction is correct")
+else:
+    print("Ooops, bugs dectected")
