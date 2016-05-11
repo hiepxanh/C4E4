@@ -9,8 +9,7 @@ from turtle import*
 ##        left(17)
 ##        penup()
 ##        forward(i * 2)
-##        pendown()
-
+##        pendown()
 
 ##def stardraw(x,y,length):#int,int,int
 ##    penup()
@@ -27,19 +26,16 @@ from turtle import*
 ##    x = random.randint(-300, 300)#random.randint(<min>,<max>)
 ##    y = random.randint(-300, 300)
 ##    length = random.randint(3, 10)
-##    stardraw(x, y, length)
-b=[1,1,1,12,6,1,1]
+##    stardraw(x, y, length)
 def  get_even_list(numblist):#list
     a=0
-    d=[]
     for x in numblist:
-        if x%2==0:
-            d.append(numblist[a])
+        if x%2==1:
+            del numblist[a]
         a=a+1    
-    return d
+    return numblist
 a=[1, 2, 5, -10, 9, 6]
 even_list = get_even_list(a)
-print(get_even_list(b))
 if set(even_list) == set([2, -10, 6]):
     print("Your function is correct")
 else:
@@ -53,8 +49,7 @@ else:
 ##if string_with_no_dollars == "80% percent of life is showing up":
 ##    print("Your function is correct")
 ##else:
-##    print("Oops, there's a bug")
-
+##    print("Oops, there's a bug")
 
 
 
