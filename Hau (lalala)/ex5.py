@@ -76,17 +76,17 @@ def bill_compute(prices,stock,dict_of_buying_item):
         for z,w in stock.items():
             if x==z:
                 a=True
-                if (int(w)-int(y))<0:
+                if (int(y)-int(w))>0:
                     return 'not enough in stock'
+                    break
                 else:
                     stock[z]=int(w)-int(y)
         if a==True:
-            pass
+            for d, c in prices.items():
+                if x == d:
+                    spend = c * y
         else:
             return 'no fruit chosen'
-        for z,w in prices.items():
-            if x==z:
-                spend=w*y
     return spend
 
 display(prices,stock)
