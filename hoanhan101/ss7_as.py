@@ -10,18 +10,18 @@ menu_collection = db["menu"]
 orders_collection = db["orders"]
 
 # EX3
-# all_menu = menu_collection.find()
-# for x in all_menu:
-#     print(x)
-# all_menu = menu_collection.find()
-# for x in all_menu:
-#     print(x["name"], ":", x["price"])
+all_menu = menu_collection.find()
+for x in all_menu:
+    print(x)
+all_menu = menu_collection.find()
+for x in all_menu:
+    print(x["name"], ":", x["price"])
 
 # EX4
 # orders_collection.insert_one({"customer":"hoanh","items":["white coffee","cookies"]})
-# all_orders = orders_collection.find()
-# for i in all_orders:
-#     print(i["customer"],":",i["items"])
+all_orders = orders_collection.find()
+for i in all_orders:
+    print(i["customer"],":",i["items"])
 
 # EX5
 all_orders = orders_collection.find_one({"customer":"hiep"})
