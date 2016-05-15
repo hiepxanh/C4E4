@@ -30,7 +30,6 @@ print(u,"order: ",customer_order["items"])
 total = 0
 for menu in all_menu:
     for order in customer_order["items"]:
-        # for menu in all_menu:
         if order == menu["name"]:
             total = total + menu["price"]
 print(u,"has to pay:",total)
