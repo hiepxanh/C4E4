@@ -1,28 +1,23 @@
 class vendingMachine:
-    drinkinfo = {1: "Coke", 2: "Energy", 3: "Water"}
-    price = {"Coke": 7, "Energy": 10, "Water": 5}
+    def __init__(self):
+        self.drinkinfo = {"Coke": 7, "Energy": 10, "Water": 5}
+        self.buttonDict={"1":"Coke","2":"Energy","3":"Water"}
 
-    def getdrink(coin, button):
-        drinkinfo1 = vendingMachine.drinkinfo[button]
-        return drinkinfo1
-        price = vendingMachine.price[drinkinfo1]
-        return price
-        while coin<int(price):
-            print("Please insert more valuable coin")
-        if coin==int(price):
-            print("Here is your ",drinkinfo1)
-        elif coin>int(price):
-            change=coin -int(price)
-            print("Here is your ", drinkinfo1," and refund ", change)
-print("Please choose you drink from below list:")
-print(vendingMachine.drinkinfo)
-b=int(input("I choose"))
-while b>3 or b<1:
-    print("Your drink is not available")
-    b = int(input("Please choose your drink from 1 to 3"))
-c=int(input("Insert coin"))
-vendingMachine.getdrink(c,b)
-
+    def getdrink(self, coin, button):
+        drink=self.buttonDict[str(button)]
+        print("Here is your", drink)
+        return coin - self.drinkinfo[drink]
+        # if button ==1:
+        #     print("Here is your Coke",coin-self.drinkinfo["Coke"],"VND")
+        #     return coin - self.drinkinfo["Coke"]
+        # if button ==2:
+        #     print("Here is your Energy",coin-self.drinkinfo["Energy"],"VND")
+        #     return coin - self.drinkinfo["Energy"]
+        # if button ==3:
+        #     print("Here is your water", coin - self.drinkinfo["water"], "VND")
+        #     return coin - self.drinkinfo["water"]
+PK =vendingMachine()
+PK.getdrink(9,1)
 class student:
     def __init__(self,name,age, ability):
         self.name = name
