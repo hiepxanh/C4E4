@@ -8,8 +8,6 @@ class Ninja:
     def attack(self,enemy):
          ninja_name = self.name
          enemy_name = enemy.name
-         ninja_village = self.village
-         enemy_village = enemy.village
          ninja_hp = self.healthPoint
          enemy_hp = enemy.healthPoint
          ninja_atk = self.attackPoint
@@ -18,7 +16,7 @@ class Ninja:
          enemy_def = enemy.defensePoint
     
          if ninja_atk < enemy_def:
-             print(ninja_name,"cannot attack",enemy_name)
+             print(ninja_name,"cannot hurt",enemy_name)
              print(enemy_name + "'s HP is still " + str(enemy_hp))
          else:
              enemy_hp = enemy_hp - (ninja_atk - enemy_def)
