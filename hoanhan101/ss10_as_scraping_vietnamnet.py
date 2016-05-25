@@ -17,8 +17,10 @@ soup = bs4.BeautifulSoup(html_source, "html.parser")
 
 posts = soup.find("ul", {"class":"HotList"})
 for post in posts:
-    link = post.h2.a["href"]
+    link = "http://vietnamnet.vn" + post.h2.a["href"]
     title = "hoanhan101: " + post.h2.a.string
+    print(title)
+    print(link)
     db_posts.insert_one(
         {
             "title:":title,
