@@ -20,7 +20,7 @@ for post in hot_posts:
     print(title)
     link = 'http://m.vietnamnet.vn' + post.h6.a['href']
     print(link)
-    db_posts.insert_one({'title':title,'link':link})
+    #db_posts.insert_one({'title':title,'link':link})
     print('--------------------------')
     i += 1
     if i > 5: break
