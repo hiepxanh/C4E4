@@ -32,6 +32,4 @@ for po in post:
         'link':links,
         'img':img
     })
-
-    print(po.a['href']['img'])
 print(type(post))
