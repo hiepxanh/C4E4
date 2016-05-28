@@ -9,15 +9,9 @@ html_source = r.read()
 soup = bs4.BeautifulSoup(html_source, 'html.parser')
 table = soup.find('table', {"id" : "tableContent"})
 
-trs = table.find_all('tr',{"class" : "r_item "})
+trs = table.find_all('tr')
 for tr in trs:
     tds = tr.find_all('td', {"class" : "b_r_c"})
     for td in tds:
         print(td.text)
 
-
-tras = table.find_all('tr',{"class":"r_item_a "})
-for tra in tras:
-    td_as = tra.find_all('td', {"class": "b_r_c"})
-    for td_a in td_as:
-        print(td_a.text)
